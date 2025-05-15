@@ -18,12 +18,8 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="Charging_Map.html">Charging Map</a></li>
       <li><a href="Benefits_myths.html">Benefits &amp; Myths</a></li>
-
       <li><a href="EV_challenges.html">EV Challenges</a></li>
-      <li><a href="Incentives.html" class="active">Incentives &amp; TCO</a></li>
-
       <li><a href="Incentives.html" class="active">Incentives &amp; Energy Cost Savings</a></li>
-
       <li><a href="FAQ_about.html">FAQ & About</a></li>
     </ul>
   </nav>
@@ -32,6 +28,27 @@
     <div class="page-header">
       <h1>Incentives &amp; Energy Cost Savings Calculator</h1>
       <p class="lead">Calculate your potential savings and discover available incentives in your area.</p>
+    </div>
+
+    <div class="incentive-cards calculator-grid" style="margin-bottom: 2rem;">
+      <div class="card">
+        <h2>Federal Incentives</h2>
+        <ul class="incentive-list">
+          <li>Fringe Benefits Tax (FBT) exemption for eligible EVs</li>
+          <li>Luxury Car Tax (LCT) threshold increased for low-emission vehicles</li>
+          <li>Instant asset write-off for business purchases</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Additional Benefits</h2>
+        <ul class="incentive-list">
+          <li>Stamp duty exemptions in most states</li>
+          <li>Registration discounts</li>
+          <li>Free or discounted parking in some areas</li>
+          <li>Access to transit lanes</li>
+        </ul>
+      </div>
     </div>
 
     <div class="calculator-grid">
@@ -81,9 +98,9 @@
           </label>
           <label>Select your current car:
             <select id="car-comparison" class="control-select">
-              <option value="small">Small Sedan</option>
-              <option value="medium">Medium SUV</option>
-              <option value="large">Large SUV</option>
+              <option value="small">Small Sedan (7.5L/100km)</option>
+              <option value="medium">Medium SUV (9.5L/100km)</option>
+              <option value="large">Large SUV (12L/100km)</option>
             </select>
           </label>
           <button type="button" class="btn primary" onclick="updateEmissionsChart()">Calculate Emissions</button>
@@ -92,9 +109,9 @@
           <h3>Environmental Impact</h3>
           <p>Switching to an EV can reduce your carbon footprint by up to 70% over the vehicle's lifetime.</p>
           <ul class="info-list">
-            <li>Zero tailpipe emissions</li>
-            <li>Lower lifecycle emissions</li>
-            <li>Supporting renewable energy</li>
+            <li>Zero tailpipe emissions during operation</li>
+            <li>Average EV produces 2.5 tonnes CO₂ per year vs 4.6 tonnes for ICE vehicles</li>
+            <li>Lower lifecycle emissions when charged with renewable energy</li>
           </ul>
         </div>
       </div>

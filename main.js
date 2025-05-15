@@ -13,6 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // Make the 'Viron' brand clickable to return to home
+  const brand = document.querySelector('.brand');
+  if (brand) {
+    brand.style.cursor = 'pointer';
+    brand.addEventListener('click', () => {
+      window.location.href = 'index.html';
+    });
+  }
+
   // Initialize map if on charging map page
   if (currentPage === 'Charging_Map.html') {
     initMap();
@@ -452,10 +461,10 @@ function updateEmissionsChart() {
   document.getElementById('emissions-chart').innerHTML = `
     <div class="bars">
       <div class="bar ice" style="width:${iceWidth}%">
-        <span>${iceCO2} g/km&nbsp;(ICE)</span>
+        <span></span>
       </div>
       <div class="bar ev" style="width:${evWidth}%">
-        <span>${EV_CO2} g/km&nbsp;(EV)</span>
+        <span></span>
       </div>
     </div>
 
