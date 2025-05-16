@@ -314,7 +314,7 @@ h1, h2, h3 {
 
 .dot.ultra { background: #e74c3c; }
 .dot.fast { background: var(--primary-color); }
-.dot.standard { background: var(--secondary-color); }
+.dot.standard { background: #3498db; }
 
 /* Info Grid */
 .info-grid {
@@ -873,7 +873,7 @@ input:focus, select:focus {
 }
 
 .marker-dot.standard {
-  background: var(--secondary-color);
+  background: #3498db;
 }
 
 /* Map Popup Styles */
@@ -1164,6 +1164,12 @@ ul {
   .faq-item p {
     font-size: 0.95rem;
   }
+
+  .marker-dot {
+    width: 24px;
+    height: 24px;
+    border-width: 3px;
+  }
 }
 @media (max-width: 600px) {
   .nav {
@@ -1284,4 +1290,45 @@ ul {
     min-width: unset;
     box-sizing: border-box;
   }
+}
+
+.leaflet-control-container .leaflet-top, .leaflet-control-container .leaflet-bottom {
+  z-index: 0;
+}
+
+/* Accessibility improvements for Incentives page */
+#incentives select,
+#incentives input[type="number"] {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #222;
+  background: #fff;
+  border: 1.5px solid #b7f5d0;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  margin-bottom: 1rem;
+}
+
+#incentives .result-box,
+#incentives .result-summary {
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+#incentives label {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+#incentives .form-group {
+  margin-bottom: 1.2rem;
+}
+
+#incentives option {
+  font-size: 1.08rem;
 }
