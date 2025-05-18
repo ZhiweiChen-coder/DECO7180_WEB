@@ -87,6 +87,17 @@
           <button type="button" class="btn primary" onclick="calcEnergySavings()">Calculate Savings</button>
         </form>
         <div id="energy-savings-result" class="result-box"></div>
+        <details class="method" style="margin-top: 0.5rem;">
+          <summary>Methodology</summary>
+          <ul>
+            <li>EV energy use: 15 kWh/100 km (EVC factsheet 2024)</li>
+            <li>ICE fuel use: 8 L/100 km (NTC fleet avg 2023)</li>
+            <li>Fuel price: $2.10/L (BITRE national ULP avg 2024-25)</li>
+            <li>Electricity rate: $0.25/kWh (AEMC residential avg 2024)</li>
+            <li>User inputs for annual distance, fuel price, and electricity rate</li>
+            <li>Calculation: (Annual km × fuel use × fuel price) − (Annual km × EV use × electricity rate)</li>
+          </ul>
+        </details>
       </div>
 
       <div class="card">
@@ -165,7 +176,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2024 Viron. All rights reserved.</p>
+      <p>&copy; 2025 Viron. All rights reserved.</p>
     </div>
   </footer>
 
